@@ -1,0 +1,29 @@
+### 멤버생성
+POST localhost:8080/members
+Content-Type: application/json
+
+{
+  "id" : "kun",
+  "password" : "kun",
+  "name" : "ㅁㅁㅁ",
+  "age" : 101,
+  "role" : "member"
+}
+
+### 멤버 전체 조회
+GET localhost:8080/members
+
+
+### 멤버 단건 조회
+GET localhost:8080/members/136b59b1-eec2-40fd-9671-e375b4816a05
+
+
+
+### 메세지
+POST localhost:8080/send
+Content-Type: application/json
+
+{
+  "text" : "시작",
+  "name" : "시작TEST"
+}
